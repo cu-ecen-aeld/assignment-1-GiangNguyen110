@@ -1,5 +1,7 @@
 #!/bin/sh
-# Tester script for assignment 1
+
+# Shell script finder-app/finder.sh of Assignment 01. 
+# https://www.coursera.org/learn/linux-system-programming-introduction-to-buildroot/supplement/bnixD/assignment-1-instructions
 # Author: Nguyen Thu Giang
 
 filesdir="$1"
