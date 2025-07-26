@@ -8,7 +8,7 @@ filesdir="$1"
 searchstr="$2"
 
 if [ $# -eq 2 ]; then
-	if [ ! -d $1 ]; then
+	if [ ! -d "$1" ]; then
 		echo "Path does not exist"
 		exit 1
 	fi
@@ -24,7 +24,7 @@ number_of_files() {
 }
 
 number_of_matching_lines() {
-	grep -R $searchstr $filesdir | wc -l
+	grep -R "$searchstr" "$filesdir" 2>/dev/null | wc -l
 }
 
 total_files=$(number_of_files)

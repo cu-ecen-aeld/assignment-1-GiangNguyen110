@@ -15,7 +15,7 @@ filebasename=$(basename $writefile)
 pathname=$(dirname $writefile)
 
 if [ $# -eq 2 ]; then
-	if [ ! -d $1 ]; then
+	if [ ! -d "$1" ]; then
 		echo "Path does not exist. Create a new one..."
         mkdir -p "$pathname"
 	fi
